@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    animation: change 10s infinite ease-in-out;
+
+}
+
+h1{
+    font-weight: normal;
+    font-size: 60px;
+    margin: -150px 0 40px;
+}
+
+.countdown{
+    display: flex;
+    transform: scale(2);
+
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+.time h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 5px;
+
+}
+
+@media(max-width:500px){
+    h1{
+        font-size: 45px;
+    }
+
+    .time{
+        margin: 5px;
+    }
+
+    .time h2{
+        font-size: 12px;
+
+    }
+
+    .time small{
+        font-size: 10px;
+
+    }
+
+
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(https://images.unsplash.com/photo-1519414442781-fbd745c5b497?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1182&q=80);
+    }
+    35%
+    {
+        background-image: url(https://images.unsplash.com/photo-1556115908-233c785befbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    }
+    75%
+    {
+        background-image: url(https://images.unsplash.com/photo-1615958354408-c15ad934a549?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+    }
+    100%
+    {
+        background-image: url(https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+        
+    }
+}
+
